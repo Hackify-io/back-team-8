@@ -1,0 +1,30 @@
+{% load static %}
+
+<div class="container-fluid mb-3">
+            <div class="row justify-content-between shadow-sm px-5">
+                <p id="logo-name">MedTravel</p>
+                <div class="user_icon d-flex align-items-center">
+                   <p>Welcome, <b>Carlos</b></p>
+                    <img src="{% static 'imgs/user.png' %}" alt="icon">
+                </div>
+            </div>
+
+            <div class="row mt-3 px-5 justify-content-between">
+                <div class="d-flex ">
+                        <div class="links">
+                      <a href="/">Home</a>
+                    </div>
+                    <div class="links">
+                      <a href="/directory/">Directory</a>
+                    </div>
+                    <div class="links">
+                      <a href="/clinics/">Clinics</a>
+                    </div>
+                </div>
+
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+            </div>
+        </div>

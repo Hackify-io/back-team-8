@@ -1,0 +1,39 @@
+body{
+    background-color: #7abaff;
+}
+main{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    transform: translateX(50%) translateY(50%);
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    overflow: hidden;
+}
+
+.input-style-1{
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px 6px 30px;
+    font-family: Arial,sans-serif;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.input-icon{
+	position: absolute;
+	transform: translateY(0px);
+}
+
+.password-eye-icon{
+    object-fit: contain;position: absolute; right: 0; transform: translateY(50%) ;cursor: pointer;
+}
+
+.logo{
+    background-color: yellow;width: 80px;height: 80px;border-radius: 1px;
+}

@@ -1,0 +1,49 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Med</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'css/clinic.css'%}">
+    
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{% static 'js/ploty.js' %}"></script>
+    <script src="{% static 'js/clinic.js'%}"></script>
+
+</head>
+<body>
+    
+
+    {% include 'MedWebApp/html_includes/header.html' %}
+
+    <div class="container-fluid">
+        <div class="row pt-5 justify-content-center mb-5">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 graph1">
+                <div class="w-100" id="plot1"></div>
+                <a href="/clinics/appointments" id="btn-1" class="text-center btn-1 blue-style">Details</a>
+            </div>    
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 graph1">
+                <div class="w-100" id="plot2"></div>
+                <a href="/clinics/financial" id="btn-2" class="text-center btn-1 green-style">Details</a>
+            </div> 
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 graph1">
+                <div class="w-100" id="plot3"></div>
+                <a href="/clinics/visits" id="btn-3" class="text-center btn-1 purple-style">Details</a>
+            </div> 
+        </div>
+    </div>
+    
+    {% include 'MedWebApp/html_includes/footer.html' %}
+
+
+</body>
+</html>

@@ -4,14 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/header.css" %}">
+    <link rel="stylesheet" href="{% static 'css/commerce_profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/super-cards.css' %}">
+
      <script src="{% static 'js/ScrollMagic.min.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> <!--THIS REPLACE TimelineLite.js and TweenLite.js -->
     <script src="{% static 'js/CSSPlugin.min.js' %}"></script>
     <script src="{% static 'js/debug.addIndicators.min.js' %}"></script> <!--MUST BE DELETED LATER-->
     <script src="{% static 'js/animation.gsap.min.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body class="bg-danger">
+
+<body class="">
+    <header>
+            {% include 'MedWebApp/html_includes/header.html' %}
+    </header>
+    <main class="container my-5">
+        <section>
+            <div id="big_logo_img" style="background-image: url({% static 'imgs/cover_img.jpg' %})" >
+                <div class="h-75"></div>
+                <div class="row justify-content-end h-25" style="background-color: rgba(100,149,237,0.9)">
+                    <div class="logo-container m-5 ">
+                        <img class="logo-img" src="{% static 'imgs/logo_img.png' %}" alt="logo">
+                    </div>
+                    <div class="col-5 ">
+                        <p id="team_name">MI NOMBRE DE MI EQUPO</p>
+                        <p id="location_text">Blv. Agua Caliente Perro Del Rio, Av. Avellana</p>
+                    </div>
+
+                    <div class="col-5 d-flex align-items-center">
+                        <div type="button" data-toggle="modal" data-target="#exampleModal" id="send_message" class="button-style" data-target="#exampleModal">
+                            <img src="{% static 'imgs/email-icon.png' %}" alt="icon">
+                            <p>Message</p>
+                        </div>
+
+                        <div id="make_appointment" class="button-style">
+                            <img src="{% static 'imgs/date-icon.png' %}" alt="icon">
+                            <p>
+                                Register an Appointment
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 mt-5" style="background-color: rgba(126,237,197,0.33)">
+                        <div id="reviews">
+                            <p class="mb-0 mt-4">Rating</p>
+                            <hr class="my-1">
+                            <div class="mt-4">
+                                <div class="w-100 d-flex justify-content-center">
+                                    <img src="{% static 'imgs/heart-unliked.png' %}" alt="like" width="30px" >
+                                </div>
+                                <p class="text-center">874 Likes</p>
+                            </div>
+                        </div>
+                        <div id="description" class="mt-5">
+                            <p class="m-0">Description</p>
+                            <hr class="my-1">
+                            <p class="my-2">Some long description that we should read, but in spite of not having the required time I will not</p>
+                        </div>
+                        <div id="contact" class="mt-5">
+                            <p class="m-0">Contact</p>
+                            <hr class="my-1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <p id="direction_info">Blv. Agua Caliente Perro Del Rio, Av. Avellana</p>
+                                </div>
+                                <div class="row">
+                                    <a href="" id="email">hospital@gmail.com</a>
+                                </div>
+                                <div class="row">
+                                    <p>Website: <a href="" id="email">hospital@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="map" class="my-5">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3364.506108032761!2d-117.00891234986193!3d32.51262730463454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d948164e7e8e8f%3A0x114150ef816d5b09!2sTorre%20Aguacaliente%2C%20Tijuana%2C%20B.C.!5e0!3m2!1sen!2smx!4v1579394517405!5m2!1sen!2smx" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <div class="col-9 mt-5 bg-light">
+                        <div class="container-fluid">
+                            <div class="row ml-5 py-4">
+                                <p class="m-0">GALLERY</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                       <div class="container-fluid w-100">
+                                           <div class="row justify-content-center">
+                                             <img src="{% static 'imgs/insta-5.jpg' %}" alt="icon" style="width: 100%; height: auto" >
+                                           </div>
+                                       </div>
+                                </div>
+                                <div class="col-12">
+                                        <div class="container-fluid">
+                                            <div class="row justify-content-between mt-5">
+                                                <img src="{% static 'imgs/insta-1.jpg' %}" alt="mini_img" width="150px">
+                                                <img src="{% static 'imgs/insta-4.jpg' %}" alt="mini_img" width="150px">
+                                                <img src="{% static 'imgs/insta-3.jpg' %}" alt="mini_img" width="150px">
+                                                <img src="{% static 'imgs/insta-2.jpg' %}" alt="mini_img" width="150px">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-around mt-5">
+                                {% include 'MedWebApp/html_includes/mini-card.html' %}
+                                {% include 'MedWebApp/html_includes/mini-card.html' %}
+                                {% include 'MedWebApp/html_includes/mini-card.html' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+               <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Send Us a Email</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+                <div class="input-group">
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="modal-footer w-100">
+                  <div class="row justify-content-center w-100">
+                      <button type="button" class="btn btn-primary">Send Message</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    {% include 'MedWebApp/html_includes/footer.html' %}
 
 </body>
 </html>

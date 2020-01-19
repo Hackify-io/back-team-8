@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Home.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Featured_Card.css'%}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>{% include 'MedWebApp/html_includes/header.html' %}</header>
+    <div class="container-fluid">
+        <div class="row">
+
+
+    <div id="Main_Search_Div" class="col-lg-12 col-md-12 col-sm-12" style=" background-image: url({% static 'imgs/doctor_bg.jpg'%});">
+        <h1 class="Title_Main_Search" style="align-self: center">Find your Procedure, find your city </h1>
+        <div id="Main_Search_SubDiv" class="container-fluid">
+            <div class="row">
+
+            <div class="Sub_Div col-lg-5 col-md-5 col-sm-5">
+                <h1 class="Title_Main_Search" style="font-size: 5vh;">Select your Medical Procedure</h1>
+                <select name="procedures" size="1" style="width: 15vw; height: 7.5vh;">
+                  <option value="Plastic_Surgery" class="select-option">Plastic Surgery</option>
+                  <option value="Cesarean section" class="select-option">Cesarean section</option>
+                  <option value="Arthroplasty of knee " class="select-option">Arthroplasty of knee</option>
+                  <option value="Spinal fusion"class="select-option">Spinal fusion</option>
+                </select>
+            </div>
+            <div class="Sub_Div col-lg-3 col-md-3 col-sm-3" style="align-self: start; float: start">
+                <h1 class="Title_Main_Search" style="font-size: 5vh;">Select your City</h1>
+                <select name="cities" size="1" style="width: 15vw; height: 7.5vh;">
+                  <option value="Tijuana B.C." class="select-option">Tijuana B.C.</option>
+                  <option value="Mexico City" class="select-option">Mexico City</option>
+                  <option value="Guadalajara" class="select-option">Guadalajara</option>
+                  <option value="Monterrey"class="select-option">Monterrey</option>
+                </select>
+            </div>
+                 <div class="Sub_Div col-lg-2 col-md-2 col-sm-2" style="justify-content: center;justify-items: center">
+                <button id="BTN_Search"><i class="fa fa-search"></i><p style="">Search</p></button>
+            </div>
+
+                      </div>
+
+    </div>
+    </div>
+    <!-- Carousel Starts -->
+            <div class="row w-100">
+    <div  id="Carousel_Container" class="col-lg-12 col-md-12 col-sm-12">
+      <h1 class="General_Title">Featured Clinics and Doctors</h1>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="{% static 'imgs/Clinic_A.jpg' %}" alt="Clinic A" style="width:100%;
+    height: 70vh; object-fit: contain;  ">
+            <div class="carousel-caption">
+              <a href="index.html" class="Carousel_Link">My Health Clinic</a>
+              <p>The best Clinic in Monterrey!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="{% static 'imgs/Clinic_B.jpg' %}" alt="Clinic B" style="width:100%;
+    height: 70vh; object-fit: contain;  ">
+            <div class="carousel-caption"  style="">
+              <a href="index.html" class="Carousel_Link">Diamond Clinic</a>
+              <p>Be treated like you deserve!</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="{% static 'imgs/Doctor_A.jpg' %}" alt="Doctor_A" style="width:100%;
+    height: 70vh; object-fit: contain; " >
+            <div class="carousel-caption" >
+              <a href="index.html" class="Carousel_Link">Roberto Suastegui</a>
+              <p>The best surgeon in Tijuana</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+            </div>
+
+            <div class="row ">
+    <div id="Featured_Div" class="col-lg-12 col-md-12 col-sm-12">
+        <div class="row justify-content-between align-items-center" style=" ">
+            <h1 class="General_Title">Featured Doctors</h1>
+            <button class="See_all_BTN btn" data-toggle="modal" data-target="#Doctors_Modal" >View All</button>
+            {% include 'MedWebApp/html_includes/Doctors_Modal.html' %}
+
+        </div>
+        <div id="Doctors_Container" class="row">
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Roberto Suastegui" description="Description" img='Doctor_A.jpg' a=""%}
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Roberto Suastegui" description="Description" img='Doctor_A.jpg' a=""%}
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Roberto Suastegui" description="Description" img='Doctor_A.jpg' a=""%}
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Roberto Suastegui" description="Description" img='Doctor_A.jpg' a=""%}
+           </div>
+    </div>
+        </div>
+    <div id="Featured_Div" class="col-lg-12 col-md-12 col-sm-12" >
+        <div class="row justify-content-between align-items-center">
+            <h1 class="General_Title">Featured Clinics</h1>
+            <button class="See_all_BTN btn" data-toggle="modal" data-target="#Clinics_Modal" >View All</button>
+            {% include 'MedWebApp/html_includes/Clinics_Modal.html' %}
+        </div>
+        <div id="Doctors_Container" class="row">
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Diamond Clinic" description="Description" img='Clinic_B.jpg' a=""%}
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Diamond Clinic" description="Description" img='Clinic_B.jpg' a=""%}
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Diamond Clinic" description="Description" img='Clinic_B.jpg' a=""%}
+            {% include 'MedWebApp/html_includes/Featured_Card.html' with name="Diamond Clinic" description="Description" img='Clinic_B.jpg' a=""%}
+           </div>
+    </div>
+                    </div>
+
+            </div>
+
+    {% include 'MedWebApp/html_includes/footer.html' %}
+
+</body>
+</html>

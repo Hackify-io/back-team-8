@@ -1,0 +1,12 @@
+{% load static methods %}
+
+<div class="container-fluid" id="main_Container">
+    {% with img|get_url as url %}
+    <img src="{{ url }}" style="height: 30vh; width:30vh;" >
+    {% endwith %}
+    <div style="align-content: start">
+        <p class="Featured_Card_SubTitle">Name: <p class="Featured_Card_TXT" style="font-size: 2.5vh">{{ name }}</p></p>
+        <p class="Featured_Card_SubTitle">Description: <p class="Featured_Card_TXT">{{ description }}</p> </p>
+        <a href="{{ a }}" class="Featured_Card_SubTitle" style="color: #0f6674">More Information</a>
+    </div>
+</div>

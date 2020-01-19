@@ -1,0 +1,5 @@
+{% load static methods %}
+<label for="{{ id }}">
+    <img src="{{ image_name|get_url }}" alt="Icon" class="input-icon">
+</label>
+<input id="{{ id }}" class="{{ class }}" type="{{ type }}"  maxlength="{{ length }}" placeholder="{{ placeholder }}" onkeypress="{{ onkeypress }}"/>

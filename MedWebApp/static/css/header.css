@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700&display=swap');
+/*font-family: 'Cinzel', serif;*/
+
+
+#logo-name{
+    font-family: 'Cinzel', serif;
+    font-size: 28pt;
+    margin: 0;
+}
+.user_icon p{
+  margin: 0 10px;
+}
+
+.user_icon img{
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+}
+.links a{
+    margin: 0 8px;
+    text-decoration: none !important;
+    text-underline: none !important;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-color: transparent;
+    transition: border-color 1s ease-in-out;
+}
+
+.links a:hover{
+    border-color: black;
+}
+

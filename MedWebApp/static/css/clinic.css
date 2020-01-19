@@ -1,0 +1,67 @@
+.cabeza{
+    position: relative;
+    height: 80px;
+    width: 100%;
+}
+
+.grapg1{
+    position: absolute  ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1{
+    border-radius: 20px;
+    height: 8%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 400ms
+}
+
+.btn-1:hover{
+    box-shadow: 0  37px 20px -20px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.btn-1 a{
+    margin: 0;
+    text-decoration: none;
+}
+
+.btn-1 a:hover{
+    text-decoration: none;
+    
+}
+
+.btn-1.green-style{
+    color: green;
+    background-color: lightgreen;
+}
+
+.btn-1.green-style:hover{
+    color: rgb(14, 131, 14);
+    background-color: rgb(102, 223, 102);
+}
+
+.btn-1.blue-style{
+    color: blue;
+    background-color: lightskyblue;
+}
+
+.btn-1.blue-style:hover{
+    color: rgb(61, 61, 231);
+    background-color: rgb(135, 187, 219);
+}
+
+.btn-1.purple-style{
+    color: purple;
+    background-color: #E35FE9;
+}
+
+.btn-1.purple-style:hover{
+    color: rgb(133, 16, 133);
+    background-color: rgb(193, 46, 201);
+}

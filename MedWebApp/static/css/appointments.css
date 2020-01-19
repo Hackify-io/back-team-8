@@ -1,0 +1,12 @@
+.fondo-col{
+    background-color: lightskyblue;
+}
+
+.ren{
+    transition: all ease-in-out 200ms
+}
+
+.ren:hover{
+    background-color: rgb(194, 191, 191);
+
+}

@@ -15,11 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls.static import static
-from django.urls import path,include
+from django.urls import path
 from . import settings
 from MedWebApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Index.as_view(), name="index"),
+    path('token_validator/',views.activate_user_by_token,name="token_validator"),
+    path('signup/',views.SignUp.as_view(),name="signup"),
+    path('login/', views.Login.as_view(), name="login"),
+    path('directory/', views.Directory.as_view(), name="directory"),
+    path('clinics/', views.Clinic.as_view(), name='clinic'),
+    path('clinics/appointments', views.Clinic_appointment.as_view(), name='clinic_appointment'),
+    path('clinics/financial', views.Clinic_financial.as_view(), name='clinic_financial'),
+    path('clinics/visits', views.Clinic_visits.as_view(), name='clinic_visits')
 ] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)  # MEDIA_URL, MEDIA_ROOT

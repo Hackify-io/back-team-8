@@ -1,0 +1,33 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{% static 'js/sign-up.js' %}"></script>
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static 'css/sign-up.css' %}">
+
+</head>
+<body>
+    <main>
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center mt-5">
+                <div class="col-8">
+                    <p class=" ml-5" style="font-family: Arial, sans-serif; font-size: 25pt;" >Sign Up</p>
+                </div>
+                <div class="col-4 h-100">
+                    <button id="submit-button" type="button"  class="btn btn-dark">submit</button>
+                </div>
+            </div>
+            <div class="mx-5">
+                {% include 'MedWebApp/html_includes/signup-input.html' with id="username" class="input-style-1" type="text" image_name="identity-icon.png" placeholder="Username" length="19" %}
+                {% include 'MedWebApp/html_includes/signup-input.html' with id="email" class="input-style-1" type="text" image_name="email-icon.png" placeholder="Your Email" length="19" %}
+                {% include 'MedWebApp/html_includes/signup-input.html' with id="password" class="input-style-1" type="password" image_name="password-icon-black.png" placeholder="Password" length="19" %}
+                {% include 'MedWebApp/html_includes/signup-input.html' with id="password_confirmation" class="input-style-1" type="password" image_name="password-icon-white.png" placeholder="Password Validation" length="19" %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

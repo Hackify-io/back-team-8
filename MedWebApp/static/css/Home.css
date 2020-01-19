@@ -1,0 +1,77 @@
+#Main_Search_Div{
+    padding: 10vh;
+    justify-content: center;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,0.3);
+    margin-bottom: 10vh;
+}
+#Main_Search_SubDiv{
+
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+.Sub_Div{
+
+    height: 100%;
+    width: 100%;
+    margin: 2vh;
+    align-content: start;
+}
+.Title_Main_Search{
+    font-family: 'Ubuntu', sans-serif; color: white; font-size: 10vh;
+}
+.select-option{
+    font-size: 3vh; font-family: 'Ubuntu', sans-serif; color: black;
+}
+select{
+    font-size: 3vh;
+    height: 7.5vh;
+    border-radius: 10px;
+    width: 10vw;
+}
+#BTN_Search{
+    border-radius: 5px;
+    padding: 1vh;
+    width: 15vw;
+    background: white;
+}
+.General_Title{
+    font-family: 'Ubuntu', sans-serif; color: black; font-size: 8vh;
+    align-self: center;
+}
+#Carousel_Container{
+    background: #0f6674;
+    text-align: center;
+}
+
+.Carousel_Slide_IMG{
+    width:100%;
+    height: 20vh;
+}
+.carousel-caption{
+    background: rgba(0,0,0,0.5)
+}
+.Carousel_Link{
+    font-size: 8vh;
+    color: white;
+}
+#Featured_Div{
+     height: 80vh; padding: 5vh;margin-bottom: 2vh; text-align: center;
+}
+#Doctors_Container{
+
+}
+.See_all_BTN{
+    background: white;
+    border-radius: 15px;
+    color: dodgerblue;
+    border-style: solid;
+    border-color: dodgerblue;
+    border-width: 0.2vh;
+    height: 6vh;
+}

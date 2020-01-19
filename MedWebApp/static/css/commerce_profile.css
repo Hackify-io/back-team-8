@@ -1,0 +1,66 @@
+.button-style{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 0 10px;
+    padding: 20px 30px;
+}
+.button-style.bg-strong{
+    background-color: #0f6674;
+}
+
+.button-style p{
+     margin: 0;
+}
+.button-style img{
+    object-fit: contain;
+}
+#team_name{
+    font-family: Arial,sans-serif;
+    font-size: 22pt;
+    font-weight: bold;
+    color: white;
+        margin: 0;
+
+}
+#location_text{
+    font-family: Arial,sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    color:white;
+        margin: 0;
+
+}
+.logo-img{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+#big_logo_img{
+    position: relative;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.logo-container{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    bottom: 0;
+    left:0;
+}
+
+
+.legend{
+    position: absolute; bottom: 0;left: 0;width: 100%;background-color: rgba(100,149,237,0.9);
+    transform: translateX(15px);
+}

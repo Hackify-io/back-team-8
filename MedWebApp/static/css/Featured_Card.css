@@ -1,0 +1,12 @@
+#main_Container{
+    width: 40vh;
+    padding: 2vh; border-style: solid; border-radius: 5px;
+}
+.Featured_Card_SubTitle{
+    font-size: 3vh; color: black; margin-bottom: 2vh; font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+.Featured_Card_TXT{
+     font-size: 2vh; color: black; margin-bottom: 2vh; font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}

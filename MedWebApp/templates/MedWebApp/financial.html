@@ -1,0 +1,103 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'css/financial.css'%}">
+
+</head>
+<body>
+
+    {% include 'MedWebApp/html_includes/header.html' %}
+
+    <table class="table">
+        <thead class="fondo-col">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Transaction Date</th>
+            <th scope="col">Client name</th>
+            <th scope="col">Treatment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="ren">
+            <th scope="row">1</th>
+            <td>Today 13:00 hrs</td>     
+            <td>Gerardo Meneces</td>
+            <td>General Consult</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">2</th>
+            <td>Tomorrow 7:00 hrs</td>
+            <td>Aarón Ledesma</td>
+            <td>General Consult</td>
+          </tr>
+          <tr class="ren"> 
+            <th scope="row">3</th>
+            <td>February 2nd</td>
+            <td>Emilio Gámez</td>
+            <td>Operation</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">1</th>
+            <td>Today 13:00 hrs</td>     
+            <td>Gerardo Meneces</td>
+            <td>General Consult</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">2</th>
+            <td>Tomorrow 7:00 hrs</td>
+            <td>Aarón Ledesma</td>
+            <td>General Consult</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">3</th>
+            <td>February 2nd</td>
+            <td>Emilio Gámez</td>
+            <td>Operation</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">1</th>
+            <td>Today 13:00 hrs</td>     
+            <td>Gerardo Meneces</td>
+            <td>General Consult</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">2</th>
+            <td>Tomorrow 7:00 hrs</td>
+            <td>Aarón Ledesma</td>
+            <td>General Consult</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">3</th>
+            <td>February 2nd</td>
+            <td>Emilio Gámez</td>
+            <td>Operation</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">2</th>
+            <td>Tomorrow 7:00 hrs</td>
+            <td>Aarón Ledesma</td>
+            <td>General Consult</td>
+          </tr>
+          <tr class="ren">
+            <th scope="row">3</th>
+            <td>February 2nd</td>
+            <td>Emilio Gámez</td>
+            <td>Operation</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+      {% include 'MedWebApp/html_includes/footer.html' %}
+
+</body>
+</html>
